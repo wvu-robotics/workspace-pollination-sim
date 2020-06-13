@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+wstool init src pollination.rosinstall
+catkin_make
+. devel/setup.sh
