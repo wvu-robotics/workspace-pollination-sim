@@ -1,0 +1,2 @@
+- git: {local-name: bramblebee, uri: 'https://github.com/wvu-robotics/simulator-bramblebee.git'}
+- git: {local-name: greenhouse, uri: 'https://github.com/wvu-robotics/simulator-greenhouse.git'}
