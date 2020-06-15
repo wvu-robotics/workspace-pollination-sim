@@ -1,6 +1,8 @@
 # WVU Robotics Pollination Simulation
 
-To initialize as a workspace:
+Use this repository to pull in all packages used in the Pollination project's
+simulation environment. A script is provided to prepare it as a catkin
+workspace:
 ```shell
 . init-src
 ```
