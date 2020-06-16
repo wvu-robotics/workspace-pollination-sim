@@ -10,9 +10,9 @@ To begin:
 ```shell
 wstool init src pollination.rosinstall
 ```
-`wstool` simply accesses the git URIs provided in the `.rosinstall` file,
-cloning their contents to the current directory. **If wstool is installed and
-fails here, you likely don't have access to the repositories it tries to pull.
+`wstool init` simply accesses the git URIs provided in the `pollination.rosinstall` file,
+cloning their contents to the `src` directory. **If wstool is installed and
+fails here, you likely don't have access to the repositories it tries to clone.
 Please notify the `#simulation` Slack channel to be added to the
 `wvu-robotics/simulation` team.**
 
