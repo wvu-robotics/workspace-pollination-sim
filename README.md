@@ -33,7 +33,7 @@ This begins SLAM, taking input from Bramblebee's IMU (/imu/data), LIDAR
 is /nav_filter/nav_filter/states.
 
 3. `roslaunch bramblebee_navigation move_base_mapless_demo.launch`
-This begins MoveIt!.
+This begins movebase.
 
 4. `roslaunch bramblebee_viz view_bramblebee_robot.launch`
 This begin RViz, giving visual feedback of the robot's sensors.
