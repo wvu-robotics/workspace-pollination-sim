@@ -13,7 +13,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   actionlib
-  blackfly_s
   manipulation_common
 )
 

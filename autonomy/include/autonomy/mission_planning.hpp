@@ -7,7 +7,6 @@
 #include <nav_msgs/Odometry.h>
 #include <geometry_msgs/Twist.h>
 #include <vector>
-#include <blackfly_s/BlackflyOut.h>
 #include <std_msgs/Bool.h>
 #include <manipulation_common/FlowerMap.h>
 //#include <aruco_markers/StartPollination.h>

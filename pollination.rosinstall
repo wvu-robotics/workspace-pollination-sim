@@ -1,3 +1,5 @@
 - git: {local-name: bramblebee, uri: 'https://github.com/wvu-robotics/simulator-bramblebee.git'}
 - git: {local-name: greenhouse, uri: 'https://github.com/wvu-robotics/simulator-greenhouse.git'}
 - git: {local-name: slam, uri: 'https://github.com/wvu-robotics/simulator-slam.git'}
+- git: {local-name: pollination-manipulator, uri: 'https://github.com/wvu-robotics/simulator-pollination-manipulator.git'}
+- git: {local-name: combined, uri: 'https://github.com/wvu-robotics/simulator-pollination-combined.git'}

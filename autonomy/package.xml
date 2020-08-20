@@ -44,13 +44,11 @@
   <build_depend>roscpp</build_depend>
   <build_depend>rospy</build_depend>
   <build_depend>actionlib</build_depend>
-  <build_depend>blackfly_s</build_depend>
   <build_depend>manipulation_common</build_depend>
   <run_depend>message_runtime</run_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>actionlib</run_depend>
-  <run_depend>blackfly_s</run_depend>
   <run_depend>manipulataion_common</run_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
