@@ -22,21 +22,20 @@ catkin build
 source devel/setup.bash
 ```
 
-### Running SLAM navigation.
+### Running Combined Robot.
 Run the following, each in separate terminals (remember to source each):
-1. `roslaunch bramblebee_gazebo greenhouse.launch`
-This begins the Bramblebee Gazebo model in the greenhouse world. 
-
-2. `roslaunch nav_filter test_online.launch`
-This begins SLAM, taking input from Bramblebee's IMU (/imu/data), LIDAR
-(velodyne_points), and encoders (/husky_velocity_controller/odom). The output
-is /nav_filter/nav_filter/states.
-
-3. `roslaunch bramblebee_navigation move_base_mapless_demo.launch`
-This begins movebase.
-
-4. `roslaunch bramblebee_viz view_bramblebee_robot.launch`
-This begin RViz, giving visual feedback of the robot's sensors.
+```
+roslaunch combined greenhouse.launch //main robot
+roslaunch combined combined_viz.launch //rviz visualization and arm move group
+roslaunch combined nav_filter.launch //SLAM navigation
+roslaunch bramblebee_navigation move_base_mapless.launch //move_base
+roslaunch manipulation_mapping flower_mapper.launch //classifier nodes
+rosrun manipulation_control ee_go_to_pose //meta move group controller for arm
+rosrun manipulation_mapping pre_pose_mapping.py //prepose mapping sequence
+rosrun manipulation_state_machine planning_ga_ros.py
+rosrun manipulation_state_machine state_machine_pollinating.py
+rosrun autonomy mission_planning_node
+```
 
 ### TODO
 1. Provide gtsam installation (either prebuilt or source)
