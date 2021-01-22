@@ -140,7 +140,7 @@ void setPoseGoal(move_base_msgs::MoveBaseGoal &poseGoal, double x, double y, dou
     double cp = cos(pitch * 0.5);
     double sp = sin(pitch * 0.5);
 
-    poseGoal.target_pose.header.frame_id = "odom";
+    poseGoal.target_pose.header.frame_id = "greenhouse";
     poseGoal.target_pose.pose.position.x = x;
     poseGoal.target_pose.pose.position.y = y;
     poseGoal.target_pose.pose.position.z = 0.0;
