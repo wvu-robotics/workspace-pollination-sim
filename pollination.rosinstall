@@ -1,5 +1,6 @@
-- git: {local-name: bramblebee, uri: 'https://github.com/wvu-robotics/simulator-bramblebee.git'}
-- git: {local-name: greenhouse, uri: 'https://github.com/wvu-robotics/simulator-greenhouse.git'}
-- git: {local-name: slam, uri: 'https://github.com/wvu-robotics/simulator-slam.git'}
-- git: {local-name: pollination-manipulator, uri: 'https://github.com/wvu-robotics/simulator-pollination-manipulator.git'}
-- git: {local-name: combined, uri: 'https://github.com/wvu-robotics/simulator-pollination-combined.git'}
+- git: {local-name: drive-base, uri: 'https://github.com/wvu-robotics/pollination-drive-base.git'}
+- git: {local-name: greenhouse, uri: 'https://github.com/wvu-robotics/pollination-greenhouse-sim.git'}
+- git: {local-name: slam, uri: 'https://github.com/wvu-robotics/pollination-slam.git'}
+- git: {local-name: pollination-manipulator, uri: 'https://github.com/wvu-robotics/pollination-manipulation.git'}
+- git: {local-name: combined, uri: 'https://github.com/wvu-robotics/pollination-bringup.git'}
+- git: {local-name: autonomy, uri: 'https://github.com/wvu-robotics/bramblebee_autonomy.git'}
