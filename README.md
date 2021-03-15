@@ -30,8 +30,8 @@ roslaunch combined combined_viz.launch //rviz visualization and arm move group
 roslaunch combined nav_filter.launch //SLAM navigation
 roslaunch bramblebee_navigation move_base_mapless.launch //move_base
 roslaunch manipulation_mapping flower_mapper.launch //classifier nodes
-rosrun manipulation_control ee_go_to_pose //meta move group controller for arm
-rosrun manipulation_mapping pre_pose_mapping.py //prepose mapping sequence
+rosrun manipulation_control ee_go_to_pose_action_node //meta move group controller for arm
+rosrun manipulation_mapping pre_pose_mapping_ros.py //prepose mapping sequence
 rosrun manipulation_state_machine planning_ga_ros.py
 rosrun manipulation_state_machine state_machine_pollinating.py
 rosrun autonomy mission_planning_node
