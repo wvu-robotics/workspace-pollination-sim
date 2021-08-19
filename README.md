@@ -34,6 +34,10 @@ rosrun manipulation_control ee_go_to_pose_action_node //meta move group controll
 roslaunch combined arm_state_machine_sim.launch //arm state machine
 rosrun autonomy mission_planning_node
 ```
+Run on a new system to generate lookup table for segmentation service:
+```
+rosrun manipulation_vision generate_lookup 
+```
 
 ### TODO
 1. Provide gtsam installation (either prebuilt or source)
