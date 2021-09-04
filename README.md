@@ -22,8 +22,27 @@ catkin build
 source devel/setup.bash
 ```
 
+### Installing tmuxinator for easy launch
+Each launch file and ROS node to run the simulation can be run separately in separate terminals, but the simulation can be launched from a single command if tmux and tmuxinator are installed.
+
+```shell
+sudo apt install tmux tmuxinator
+```
+
+Optional: enable mouse input in tmux for more easily switching between terminal panes.
+
+Edit (or create if it does not yet exist) the file `~/.tmux.conf` and add: `set -g mouse on`
+
 ### Running Combined Robot.
-Run the following, each in separate terminals (remember to source each):
+The simulation can be launched two different ways. 1) with a single command using tmuxinator, or 2) running each launch file individually
+
+To use option 1), change to the directory where this file is located (the src/ directory inside your workspace) and run:
+
+`tmuxinator start pollination_sim`
+
+To exit the tmux session, press Ctrl+b and then enter the command `kill-session`
+
+To use option 2) run the following, each in separate terminals (remember to source each):
 ```
 roslaunch combined greenhouse.launch //main robot
 roslaunch combined combined_viz.launch //rviz visualization and arm move group
